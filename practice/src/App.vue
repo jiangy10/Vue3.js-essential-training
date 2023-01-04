@@ -1,19 +1,33 @@
 <script setup>
 import HelloWorld from './components/HelloWorld.vue'
 import TheWelcome from './components/TheWelcome.vue'
+// import Checklist from './components/Checklist.vue'
 </script>
 
 <template>
-  <header>
+  <!-- <header>
     <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="125" height="125" />
 
     <div class="wrapper">
       <HelloWorld msg="You did it!" />
     </div>
-  </header>
+  </header> -->
 
   <main>
-    <TheWelcome />
+    <!-- <TheWelcome /> -->
+    <h1>Multiple Checkboxes</h1>
+    <div>
+      <input v-model = "checkBoxes" value = "first" class = "form-check-input" type = "checkbox" id = "cb1">
+      <label for = "cb1">First</label>
+    </div>
+    <div>
+      <input v-model = "checkBoxes" value = "second" class = "form-check-input" type = "checkbox" id = "cb2">
+      <label for = "cb2">Second</label>
+    </div>
+    <div>
+      <input v-model = "checkBoxes" value = "third" class = "form-check-input" type = "checkbox" id = "cb3">
+      <label for = "cb3">Third</label>
+    </div>
   </main>
 </template>
 
